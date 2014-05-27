@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+    
+    
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <!-- hi,username -->
+            <TextView
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi Ankit,"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+							   />
+			
+			 <!-- Image of user -->
+
+             <ImageView
+            android:id="@+id/ivImage"
+            
+            android:src="@drawable/ic_launcher1" 
+            android:layout_width="140dp" 
+			android:layout_height="140dp"
+			android:layout_marginLeft="50dip"
+			android:layout_marginTop="35dip"/>
+
+            
+
+        </LinearLayout>
+        
+        <!-- vertical line-->
+             <View
+    android:layout_width="1dip"
+    android:layout_height="150dip"
+    android:background="#FF000000"
+	android:layout_marginTop="50dip"/>
+             <!-- vertical line ends-->
+              
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+           
+			<!--enter ip  -->
+              <EditText
+				android:id="@+id/ip"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="Ip Adress"
+				android:layout_marginTop="70dip"/>
+					<!--enter session id -->
+              <EditText
+                  android:id="@+id/session_id"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:ems="10"
+                  android:text="Session Id" >
+
+                  <requestFocus />
+              </EditText>
+					
+              <!-- get connection -->
+              <Button
+                  android:id="@+id/connection"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Get Connection"
+                  android:layout_marginLeft="60dip"
+                  android:layout_marginTop="10dip"
+                  />
+
+              
+
+        </LinearLayout>
+       
+ 
+    </LinearLayout>
